@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Technology';
+    src: url('/fonts/technology.regular.woff2') format('woff2'),
+        url('/fonts/technology.regular.woff') format('woff'),
+        url('/fonts/technology.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #065F46;
+    padding: 20px;
+    font-family: 'Technology', Arial, Helvetica, sans-serif;
+    color: white;
+    zoom: 2;
+}
+
+.main-game-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.home-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19px;
+    margin-top: 36px
+}
+
+.timer-digit {
+    background-color: black;
+    padding: 2px;
+    border: 1px solid white;
+    color: #F94F6D;
+}
+
+.colon {
+    text-shadow: 0 0 3px black;
+}
+
+.new-game, .reset-timer {
+    background-color: transparent;
+    color: white;
+    font-family: inherit;
+    border: 1px solid white;
+    padding: 1px 30px;
+    margin-bottom: 7px;
+}
+
+.reset-timer {
+    padding: 1px 22px;
+    margin-top: 7px;
+}
+
+.period {
+    margin-bottom: 28px;
+}
+
+#dot1 {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+
+.critical-hit {
+    background-color: transparent;
+    color: white;
+    font-family: inherit;
+    border: 1px solid white;
+    padding: 4px 8px;
+    font-size: 18px;
+}
+
+.critical-hit:hover {
+    color: yellow;
+    border: 1px dashed yellow;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    transition: 0.015s ease;
+    /* #eeff1b watermelon yellow */
+    /* #ff4500 orange red */
+    /* #92000a sangria */
+}
+
+.guest-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-label, .guest-label {
+    font-size: 50px;
+    text-shadow: 0 0 2px black;
+}
+
+.score-display-home, .score-display-guest {
+    background-color: black;
+    box-shadow: 0 0 1px slategray;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #F94F6D;
+    font-size: 80px;
+    width: 110px;
+    height: 70px;
+    margin: 5px 0 17px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.score-btn {
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 2px black;
+    border: 1.5px solid #FDE68A;
+}
+
+.foul-count, .fouls-label {
+    font-size: 22px;
+    text-shadow: 0 0 2px black;
+}
+
+.foul-count {
+    border: 1px solid black;
+    box-shadow: 0 0 2px white;
+    color: white;
+    padding: 2px;
+    margin-right: px;
+    width: 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+.foul-plus, .foul-minus {
+    background-color: #FDE68A;
+    color: black;
+    border: 1px solid #FDE68A;
+    box-shadow: 0 0 1px black;
+    scale: 0.9;
+}
+
+.score-btn {
+    padding: 4px 8px;
+    margin-bottom: 11px;
+}
+
+.leading {
+    box-shadow: 0 0 15px #FDE68A !important;
+    border: 2px solid #FDE68A;
+}
+
+.winner {
+    box-shadow: 0 0 25px gold, 0 0 40px gold, inset 0 0 0 3px gold !important;
+    border: 3px solid gold;
+    transform: scale(1.1);
+    transform-origin: center;
+    position: relative;
+    z-index: 10;
+}
+
+.game-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-shadow: 0 0 1.5px black;
+    border-top: 1px dotted #FDE68A;
+    padding: 5px;
+}
+
+.history-label {}
+
+.nav-left {
+    color: #92000a; /* see other nav note */
+    margin-left: 7px;
+    margin-right: 7px;
+    /* make look more clickable */
+}
+
+.former-home {}
+
+.history-to {
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 13px;
+}
+
+.former-guest {}
+
+.nav-right {
+    color: #92000a; /* maybe a slightly lighter red for both nav chevrons */
+    margin-left: 7px;
+    /* make look more clickable */
+}
+
+#not-active-yet {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #92000a;
+    text-shadow: 
+        0.7px 0.6px 1px blue,
+        0.9px 0.9px 1px white;
+}
+
+#future-feature {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #92000a;
+    text-shadow: 
+        0.7px 0.6px 1px blue,
+        0.9px 0.9px 1px white;
+}

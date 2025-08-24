@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        
+        
+        
+        <div class="main-game-area"> <!-- main game area -->
+            <div class="home-section">
+                <span class="home-label">HOME</span>
+                <div class="score-display-home" id="score-display-home">0</div>
+                <div class="score-buttons-home">
+                    <button class="score-btn" id="home-plus-1">+1</button>
+                    <button class="score-btn" id="home-plus-2">+2</button>
+                    <button class="score-btn" id="home-plus-3">+3</button>
+                </div>
+                
+                <div class="fouls-section-home">
+                    <span class="fouls-label">FOULS</span>
+                    <span class="foul-count" id="foul-count-home">0</span>
+                    <button class="foul-plus" id="foul-plus-home">+</button>
+                    <button class="foul-minus" id="foul-minus-home">-</button>
+                </div>
+            </div> <!-- home section -->
+            
+            <div class="center-controls"> <!-- center controls -->
+                <button class="new-game">NEW GAME</button> <!-- new game -->
+                <time class="timer-display">
+                    <span class="timer-digit" id="minutes-tens">0</span>
+                    <span class="timer-digit" id="minutes-ones">0</span>
+                    <span class="colon">:</span>
+                    <span class="timer-digit" id="seconds-tens">0</span>
+                    <span class="timer-digit" id="seconds-ones">0</span>
+                </time> <!-- timer -->
+                <button class="reset-timer">RESET TIMER</button> <!-- reset timer -->
+                <div class="period">
+                    <span class="period-label">PERIOD</span>
+                    <span class="dot" id="dot1">•</span>
+                    <span class="dot" id="dot2">•</span>
+                    <span class="dot" id="dot3">•</span>
+                    <span class="dot" id="dot4">•</span>
+                </div> <!-- period -->
+                <button class="critical-hit">CRITICAL HIT</button> <!-- critical hit -->
+                <p id="not-active-yet">└ Not Active Yet ┘</p>
+
+            </div>            
+            
+            <div class="guest-section">
+                <span class="guest-label">GUEST</span>
+                <div class="score-display-guest" id="score-display-guest">0</div>
+                <div class="score-buttons-guest">
+                    <button class="score-btn" id="guest-plus-1">+1</button>
+                    <button class="score-btn" id="guest-plus-2">+2</button>
+                    <button class="score-btn" id="guest-plus-3">+3</button>
+                </div>
+                
+                <div class="fouls-section-guest">
+                    <span class="fouls-label">FOULS</span>
+                    <span class="foul-count" id="foul-count-guest">0</span>
+                    <button class="foul-plus" id="foul-plus-guest">+</button>
+                    <button class="foul-minus" id="foul-minus-guest">-</button>
+                </div>
+            </div> <!-- guest section -->
+        </div>
+        
+        <div class="game-history">
+            <span class="history-label">GAME HISTORY</span>
+            <span class="nav-left">&lt;</span>
+            <span class="former-home">13</span>
+            <span class="history-to">TO</span>
+            <span class="former-guest">21</span>
+            <span class="nav-right">&gt;</span>   
+        </div> <!-- game history -->
+        <p id="future-feature">└ Feature not yet activated ┘</p>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
